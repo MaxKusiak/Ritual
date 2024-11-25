@@ -183,14 +183,16 @@ body {
     box-sizing: border-box;
 }
 
-.footer a{
+.footer a {
     text-decoration: none;
     color: white;
     transition: color 0.2s;
 }
-.geoText a{
+
+.geoText a {
     font-size: 20px;
 }
+
 .info a {
     font-size: 24px;
 }
@@ -351,12 +353,13 @@ body {
 }
 
 @media (max-width: 850px) {
-    .call{
+    .call {
         font-size: 16px;
         padding: 7px 14px;
         right: calc(50% - 91px);
         bottom: 20px;
     }
+
     iframe {
         width: 400px;
         height: 300px;
@@ -372,58 +375,72 @@ body {
         width: 350px;
     }
 }
-@media (max-width: 627px){
-    .footer{
+
+@media (max-width: 627px) {
+    .footer {
         padding: 0 20px;
     }
-    .footer a{
+
+    .footer a {
         font-size: 16px;
     }
 }
-@media (max-width: 587px){
-    .slider{
+
+@media (max-width: 587px) {
+    .slider {
         width: 90%;
     }
-    .text{
+
+    .text {
         width: 90%;
     }
-    .whiteLine{
+
+    .whiteLine {
         width: 90%;
     }
-    .hLine{
+
+    .hLine {
         width: 90%;
     }
-    .photoLine{
+
+    .photoLine {
         width: 90%;
     }
-    .leftImg{
+
+    .leftImg {
         width: 90%;
     }
+
     iframe {
         width: 200px;
         height: 200px;
     }
 }
-@media (max-width: 536px){
+
+@media (max-width: 536px) {
     .geoText {
         width: 200px;
     }
 }
-@media (max-width: 457px){
-    .text{
+
+@media (max-width: 457px) {
+    .text {
         font-size: 18px;
     }
 }
-@media (max-width: 388px){
-    .footer{
+
+@media (max-width: 388px) {
+    .footer {
         padding: 0 10px;
     }
-    .footer a{
+
+    .footer a {
         font-size: 14px;
     }
 }
-@media (max-width: 361px){
-    .text{
+
+@media (max-width: 361px) {
+    .text {
         font-size: 14px;
     }
 }
