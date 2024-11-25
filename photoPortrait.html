@@ -1,43 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <div class="header">
         <div class="title"><a href="main.html">Ритуальні послуги</a></div>
         <div class="menu">
             <div class="1"><a href="transport.html">Транспортні послуги</a></div>
-            <div class="hLine"></div>
+            <div class="vLine"></div>
             <div class="2"><a href="cross.html">Виготовлення хрестів</a></div>
-            <div class="hLine"></div>
+            <div class="vLine"></div>
             <div class="3"><a href="coffin.html">Труни</a></div>
-            <div class="hLine"></div>
+            <div class="vLine"></div>
             <div class="4"><a href="wreaths.html">Вінки</a></div>
-            <div class="hLine"></div>
+            <div class="vLine"></div>
             <div class="5"><a href="photoPortrait.html">Фотопортрет</a></div>
         </div>
-    </div>
-    
-    <div class="capital">
-        <img class="leftImg" src="https://placehold.co/800x725?text='Фотопортрет'" alt="#">
-
-        <div class="text rowText">
-            Фотопортрет покійного - зображення на віки.<br>
-            Залишити у пам'яті, як виглядала близька померла людина допоможе фотопортрет покійного. В нашому похоронному бюро “Ритуал” можна замовити чорно-білий та кольоровий фотопортрет. Для того, щоб ми могли зробити зображення, потрібно надіслати або принести фотографію померлого з якої ви бажаєте зробити фотопортрет. Наші спеціалісти врахують всі ваші бажання та зроблять якісне зображення по фото, яке не буде псуватися та втрачати свій вигляд через вплив зовнішніх факторів.
+        <div class="burger">
+            <div>
+                <button class="burger-btn" id="burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <nav class="burger-menu" id="burger-menu">
+                <ul>
+                    <li><a href="transport.html">Транспортні послуги</a></li>
+                    <li><a href="cross.html">Виготовлення хрестів</a></li>
+                    <li><a href="cross.html">Виготовлення хрестів</a></li>
+                    <li><a href="wreaths.html">Вінки</a></li>
+                    <li><a href="photoPortrait.html">Фотопортрет</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
 
-    <a href="tel:+380674722268" class="icon call"><b>&#xf095</b></a>
+    <img class="photoImage" src="assets/img/photoPortrait.png" alt="#">
+
+    <div class="photoLine whiteLine"></div>
+
+    <div class="text photoText">
+        Фотопортрет покійного - зображення на віки.<br>
+        Залишити у пам'яті, як виглядала близька померла людина допоможе фотопортрет покійного. В нашому похоронному
+        бюро “Ритуал” можна замовити чорно-білий та кольоровий фотопортрет. Для того, щоб ми могли зробити зображення,
+        потрібно надіслати або принести фотографію померлого з якої ви бажаєте зробити фотопортрет. Наші спеціалісти
+        врахують всі ваші бажання та зроблять якісне зображення по фото, яке не буде псуватися та втрачати свій вигляд
+        через вплив зовнішніх факторів.
+    </div>
+
+    <a href="tel:+380674722268" class="icon call"><b>ЗАТЕЛЕФОНУВАТИ</b></a>
 
     <div class="footer">
         <div class="geoText">18000, Черкаси, вул. Свято-Макаріївська 123 вул. Дахнівська 32/2</div>
         <div class="info">
             <div class="socials">
-                <a class="icon instagram" target="_blank" href="https://www.instagram.com/ritual_ck?igsh=bzlrczJjOW13eTA3">&#xf16d instagram</a>
+                <a class="icon instagram" target="_blank"
+                    href="https://www.instagram.com/ritual_ck?igsh=bzlrczJjOW13eTA3">&#xf16d instagram</a>
             </div>
             <div class="phones">
                 <a href="tel:+380674722268">+380 67 472 2268</a>
@@ -45,5 +70,7 @@
             </div>
         </div>
     </div>
+    <script src="scripts/script.js"></script>
 </body>
+
 </html>

@@ -9,6 +9,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Nunito';
     src: url('../fonts/Nunito/Nunito-VariableFont_wght.ttf') format('truetype');
@@ -68,6 +69,22 @@ body {
     font-size: 20px;
 }
 
+.photoImage {
+    width: 60%;
+}
+
+.photoText {
+    width: 60%;
+}
+
+.photoLine {
+    width: 60%;
+}
+
+.hLine {
+    display: none;
+}
+
 .header {
     z-index: 99;
     position: fixed;
@@ -108,7 +125,7 @@ body {
     color: rgb(204, 204, 204);
 }
 
-.hLine {
+.vLine {
     width: 2px;
     height: 20px;
     background-color: white;
@@ -116,22 +133,22 @@ body {
 }
 
 .call {
+    font-family: "Nunito";
     position: fixed;
-    right: 80px;
-    bottom: 150px;
-    width: 60px;
-    height: 60px;
-    background-color: rgb(0, 162, 0);
-    border: 2px solid white;
-    border-radius: 50%;
+    right: 70px;
+    bottom: 200px;
+    padding: 10px 20px;
+    background: rgb(135, 135, 135);
+    background: linear-gradient(20deg, rgba(135, 135, 135, 1) 0%, rgba(215, 215, 215, 1) 50%, rgba(135, 135, 135, 1) 100%);
+    border: 2px solid black;
+    border-radius: 5px;
     text-align: center;
-    line-height: 60px;
-    color: white;
+    color: black;
     text-decoration: none;
-    font-size: 32px;
+    font-size: 18px;
 }
 
-.capital{
+.capital {
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -139,11 +156,13 @@ body {
     width: 100%;
     gap: 20px;
 }
-.leftImg{
+
+.leftImg {
     width: 40%;
     border-radius: 10px;
 }
-.rowText{
+
+.rowText {
     width: 30%;
     display: flex;
     align-items: center;
@@ -164,22 +183,182 @@ body {
     padding: 0 200px;
     box-sizing: border-box;
 }
-.footer a{
+
+.footer a {
     text-decoration: none;
     color: white;
     font-size: 24px;
     transition: color 0.2s;
 }
-.footer a:hover{
+
+.footer a:hover {
     color: rgb(204, 204, 204);
 }
-.info{
+
+.info {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 60px;
 }
-.phones{
+
+.phones {
     display: flex;
     flex-direction: column;
+}
+
+.burger {
+    display: none;
+}
+
+.burger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    /* position: absolute;
+    top: 20px;
+    right: 20px; */
+    z-index: 1000;
+    position: relative;
+}
+
+.burger-btn span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.burger-btn.active span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.burger-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-btn.active span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+.burger-menu {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: right 0.3s ease;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.burger-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.burger-menu li {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.burger-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    transition: color 0.2s;
+}
+
+.burger-menu a:hover {
+    color: rgb(204, 204, 204);
+}
+
+.burger-menu.active {
+    right: 0;
+}
+
+
+@media (max-width: 1885px) {
+    .hLine {
+        display: block;
+        width: 60%;
+    }
+
+    .capital {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+
+    .leftImg {
+        width: 60%;
+    }
+
+    .rowText {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1528px) {
+    .footer {
+        padding: 0 100px;
+    }
+}
+
+@media (max-width: 1277px) {
+    .footer a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1212px) {
+    .menu {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+@media (max-width: 1194px) {
+    .info {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 1036px) {
+    .geoText {
+        width: 400px;
+    }
+}
+
+@media (max-width: 850px) {
+    iframe {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 780px) {
+    .footer {
+        padding: 0 50px;
+    }
+
+    .geoText {
+        width: 350px;
+    }
 }
